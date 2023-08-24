@@ -77,7 +77,7 @@ model.summary()
 
 model.compile(loss='mse', optimizer='rmsprop')
 print('Train...')
-model.fit(x_train, y_train, batch_size=x_test.shape[0], epochs=300, validation_split=0.1, validation_data=(x_test, y_test))
+model.fit(x_train, y_train, batch_size=x_test.shape[0], epochs=300, validation_split=0.3, validation_data=(x_test, y_test))
 
 #does the model work well as we anticipated?
 predict_train = model.predict(x_train)
